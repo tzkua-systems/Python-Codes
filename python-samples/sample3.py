@@ -76,6 +76,7 @@ while i <= 5:
     i = i+1
     print() #start print on new line
 
+#translate
 def translate(phrase):
     translation = ""
     for letter in phrase:
@@ -92,3 +93,5 @@ def translate(phrase):
     return translation
 
 print(translate(input("Enter a phrase: ")))
+
+####################################################
