@@ -32,8 +32,8 @@ def order_numbers(number1, number2):
         return number2, number1
 
 
-# 1) Fill in the blanks so the print statement displays the result
-#    of the function call
+# Fill in the blanks so the print statement displays the result
+# of the function call
 
 
 smaller, bigger = order_numbers(100, 99)
@@ -327,7 +327,7 @@ print(sum_divisors(102))  # Should be sum of 2+3+6+17+34+51
 
 #################################################################
 
-#Fill in the gaps of the sum_squares function, so that it returns the sum of all the squares of numbers between 0 and x (not included).
+# Fill in the gaps of the sum_squares function, so that it returns the sum of all the squares of numbers between 0 and x (not included).
 # Remember that you can use the range(x) function to generate a sequence of numbers from 0 to x (not included).
 
 def square(n):
@@ -399,4 +399,59 @@ for j in arr:
 print(arr)
 
 ###################################################################
+# use nested loop to print the following alphabets:
+# XXXXX         XX          XXXXXX
+# XX            XX          XX
+# XXXXX         XX          XX
+# XX            XX          XX
+# XX            XXXXXX      XXXXXX
+
+numbers = [5, 2, 5, 2, 2]
+
+for number in numbers:
+    star = ''
+    for count in range(number):
+        star += 'X'
+    print(star)
+
+
+######################################################################
+
+# Enter your phone number: 07034490529
+# Zero Seven Zero Three Four Four Nine Zero Five Two Nine
+
+phone = input("Enter your phone number: ")
+numbers = {
+    "1": "One",
+    "2":"Two",
+    "3": "Three",
+    "4": "Four",
+    "5": "Five",
+    "6": "Six",
+    "7": "Seven",
+    "8": "Eight",
+    "9": "Nine",
+    "0": "Zero"
+}
+
+digits = ""
+for element in phone:
+    digits += numbers.get(element, "!") + " "
+print(digits)
+
+##
+
+message = input("Type here> ")
+words = message.split(' ')
+emojis = {
+    ":)": " ",
+    ":(": " "
+}
+
+greetings = ""
+for word in words:
+    greetings += emojis.get(word, word) + " "
+print(greetings)
+
+############################################################
 

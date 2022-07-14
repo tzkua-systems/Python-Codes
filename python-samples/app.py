@@ -1,7 +1,7 @@
-#import sys
-#print(sys.path)
-
+# import sys
+# print(sys.path)
 import requests
+
 
 class APICall:
     def call(self, method, api_url):
@@ -14,17 +14,16 @@ class APICall:
             case _:
                 raise TypeError("API error")
 
-class TzkuaConcepts(APICall):
+
+class TZKUAConcepts(APICall):
     url = "https://wordpress.com/home/tzkuaconcepts.wordpress.com"
     categories = ["software", "dev"]
 
     def __init__(self, category):
         self.category = category
-        if not self.category in self.categories:
-            raise TypeError ("category options ['software', 'dev']")
+        if self.category not in self.categories:
+            raise TypeError("category options ['software', 'dev']")
 
     def get(self):
         api_url = f'{self.url}{self.category}'
         return self.call("GET", api_url)
-
-

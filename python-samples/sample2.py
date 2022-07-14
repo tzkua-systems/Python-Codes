@@ -6,38 +6,38 @@
 #            return i
 #        return None
 
-
 def say_hi(name, age):
-    #print("Hello " + name + ", you are " + age)
+    # print("Hello " + name + ", you are " + age)
     print("Hello " + name + ", you are " + str(age))
+    print(f'Hello {name}, you are {age} years old!')
 
-#say_hi("Tobi", "30")
-#say_hi("Martha", "25")
+# say_hi("Tobi", "30")
+# say_hi("Martha", "25")
 say_hi("Tobi", 30)
 say_hi("Martha", 25)
 
-#print(cube(3))
+# print(cube(3))
 def cube(num):
     return num*num*num
 
 result = cube(4)
 print(result)
 
-#booleanconditions
+# booleanconditions
 is_male = True
 is_tall = True
 
 if is_male and is_tall:
 #if is_male or is_tall:
     print("You are a tall male")
-elif is_male and not(is_tall):
+elif is_male and not is_tall:
     print("You are a short male")
-elif not(is_male) and is_tall:
+elif not is_male and is_tall:
     print("You are not a male but you are tall")
 else:
     print("You are not a male and you are not tall")
 
-#
+
 def max_num(num1, num2, num3):
     if num1 >= num2 and num1 >= num3:
         return num1
@@ -48,7 +48,7 @@ def max_num(num1, num2, num3):
 
 print(max_num(22, 40, 16))
 
-#Calculator
+# Calculator
 n1 = float(input("Enter 1st number: "))
 op = input("Enter an operator: ")
 n2 = float(input("Enter 2nd number: "))
@@ -61,12 +61,12 @@ elif op == "/":
     print(n1 / n2)
 elif op == "*":
     print(n1 * n2)
-#elif op == "^":
-    #print(n1 ^ n2)
+elif op == "**":
+    print(n1 ** n2)
 else:
     print("Invalid Operator")
 
-#Dictionary: stores key value pairs
+# Dictionary: stores key value pairs
 monthConversions = {
     "Jan": "January",
     "Feb": "February",

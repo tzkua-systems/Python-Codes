@@ -49,6 +49,13 @@ print(is_power_of(70,10)) # Should be False
 
 
 ##########################################
+"""get_members = {
+    "sales": 3,
+    "engineering": 8,
+    "everyone": 18
+}
+
+is_group = True"""
 
 def count_users(group):
   count = 0
@@ -141,8 +148,9 @@ def even_numbers(maximum):
 		return_string += str(x) + " "
 	return return_string.strip()
 
+
 print(even_numbers(6))  # Should be 2 4 6
-print(even_numbers(10)) # Should be 2 4 6 8 10
+print(even_numbers(10))  # Should be 2 4 6 8 10
 print(even_numbers(1))  # No numbers displayed
 print(even_numbers(3))  # Should be 2
 print(even_numbers(0))  # No numbers displayed
@@ -159,4 +167,45 @@ print(first_and_last("tree"))
 print(first_and_last(""))
 
 ########################################################
+
+import datetime
+
+user_input = input("Enter your goal with a deadline separated by colon =\n")
+input_list = user_input.split(": ")
+
+goal = input_list[0]
+deadline = input_list[1]
+deadline_date = datetime.datetime.strptime(deadline, "%d.%m.%Y")
+today_date = datetime.datetime.today()
+time_till = deadline_date - today_date
+
+print(f"Dear user! The time remaining for your goal to {goal} is {time_till}")
+print(f"Dear user! The time remaining for your goal to {goal} is {time_till.days} days")
+print(f"Dear user! The time remaining for your goal to {goal} is {int(time_till.total_seconds()/60/60)} hours")
+
+
+########################################################
+
+# find the largest number in a list
+numbers = [3, 6, 12, 8, 4, 10]
+max = numbers[0]
+for number in numbers:
+    if number > max:
+        max = number
+print(max)
+
+#######################################################
+
+# In Python, a dictionary can only hold a single value for a given key.
+# To workaround this, our single value can be a list containing multiple values.
+# Here we have a dictionary called "wardrobe" with items of clothing and their colors.
+# Fill in the blanks to print a line for each item of clothing with each color,
+# for example: "red shirt", "blue shirt", and so on.
+
+wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
+for keys, values in wardrobe.items():
+	for value in values:
+		print("{} {}".format(value, keys))
+
+#########################################################
 
