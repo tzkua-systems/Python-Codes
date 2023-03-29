@@ -374,7 +374,10 @@ def f3(list_of_list):
                 seen.add(x)
     return result
 '''
+<<<<<<< HEAD
 '''
+=======
+>>>>>>> 716a8dd7a67931423b2f347f948375d3362c8762
 !pip install wordcloud
 !pip install fileupload
 !pip install ipywidgets
@@ -427,6 +430,7 @@ myimage = calculate_frequencies(file_contents)
 plt.imshow(myimage, interpolation = 'nearest')
 plt.axis('off')
 plt.show()
+<<<<<<< HEAD
 '''
 '''
 class Person:
@@ -463,3 +467,6 @@ for number in range(1, 100):
         break
 else:
     print('Let\'s print something out!')
+=======
+
+>>>>>>> 716a8dd7a67931423b2f347f948375d3362c8762

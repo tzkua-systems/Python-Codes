@@ -85,7 +85,10 @@ monthConversions = {
 print(monthConversions["Nov"])
 print(monthConversions.get("Jan"))
 
+<<<<<<< HEAD
 #
+=======
+>>>>>>> 716a8dd7a67931423b2f347f948375d3362c8762
 regulator = {
     0: "lowest",
     1: "low",

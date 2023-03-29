@@ -168,6 +168,7 @@ while user_input != "exit":
     for num_of_days_element in set(user_input.split(", ")):
         validate_user_input()
 
+<<<<<<< HEAD
 ##
 
 def days_to_units(num_of_days, conversion_unit):
@@ -201,6 +202,8 @@ while user_input != "exit":
     days_and_unit_dictionary = {"days": days_and_unit[0], "unit": days_and_unit[1]}
     validate_user_input()
 
+=======
+>>>>>>> 716a8dd7a67931423b2f347f948375d3362c8762
 
 ##############################################################################
 
