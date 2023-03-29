@@ -18,9 +18,9 @@ print(word4.title())
 word6 = "Tobi"
 print(word6 * 5)
 # length
-print(len(word6))
+print("lenght of word6 is:", len(word6))
 # type
-print(type(word6))
+print("word6 class type is:", type(word6))
 
 # add integer & string
 number = 7
@@ -29,12 +29,12 @@ area = "Ikosi-Ketu"
 # print(type(number))
 address = str(number) + ", " + street + ", " + area
 print(address)
-print(id(word1))
-print(id(word2))
+print("word1 id number is:", id(word1))
+print("word2 id number is:", id(word2))
 
-print(type(number))
+print("the number type is:", type(number))
 convert = float(number)
-print(convert)
+print("number is converted to float:", convert)
 
 import math  # import math as m
 
@@ -42,3 +42,35 @@ x = math.sqrt(25)  # x = m.sqrt(25)
 print(x)
 print(math.floor(2.9))  # round figure down
 print(math.ceil(2.2))  # round figure up
+
+
+###############################################################
+def month_days(month, days):
+    print(month + " has " + str(days) + " days ")
+
+month_days("June", 30)
+month_days("July", 31)
+
+
+#################################################################
+
+name = "Tobi"
+number = len(name) * 3
+
+print("Hello {}, your lucky number is {}".format(name, number))
+print(f"Hello {name}, your lucky number is {number}")
+
+
+###################################################################
+
+
+def to_celsius(x):
+    return (x-32) * 5/9
+
+
+for x in range (0, 101, 10):
+    print("{:>3} F | {:>6.2F} C".format(x, to_celsius(x)))  # string formatting expression
+
+
+##################################################################
+
